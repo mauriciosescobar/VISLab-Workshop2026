@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: Level2
-  m_EditorClassIdentifier: Assembly-CSharp::Level2StateObject
-  nextState: {fileID: 11400000, guid: bd26fad7601607c9d8d16291fe89cd7e, type: 2}
+  m_Name: Level3
+  m_EditorClassIdentifier: Assembly-CSharp::Level3StateObject
+  nextState: {fileID: 11400000, guid: 101b93f8ea8771248b38b002b2ce3e3c, type: 2}

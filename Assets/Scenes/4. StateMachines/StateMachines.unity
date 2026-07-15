@@ -3290,7 +3290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3055af9bc75d823bd9fb956f9a6ae547, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScriptableObjectStateMachine
-  initialState: {fileID: 11400000, guid: b5c6ea12558714b119c61bf006e15260, type: 2}
+  initialState: {fileID: 11400000, guid: 8f7d880266b37204b981d03efd3f739a, type: 2}
   player: {fileID: 638535350}
   start:
     camera: {fileID: 1595534003}
