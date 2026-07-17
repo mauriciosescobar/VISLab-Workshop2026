@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -39,11 +40,20 @@ public class GameManager : MonoBehaviour
 	{
 		messageLog.text = $"Jogador tomou {amount} de dano.";
 
+		StartCoroutine(LogClear());
+
 		UpdateUI();
 	}
-
+	
 	private void UpdateUI()
 	{
 		playerHealth.text = "Health: " + player.Health;
+	}
+
+	private IEnumerator LogClear()
+	{
+		yield return new WaitForSeconds(3f);
+
+		messageLog.text = "";
 	}
 }

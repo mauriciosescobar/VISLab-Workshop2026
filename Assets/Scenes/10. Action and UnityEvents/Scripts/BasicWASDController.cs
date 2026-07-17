@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class BasicWASDController : MonoBehaviour
 {
-	[SerializeField] private float velocidade = 5f;
-	[SerializeField] private float velocidadeRotacao = 100f;
+	[SerializeField] private float speed = 5f;
+	[SerializeField] private float rotationSpeed = 100f;
 
 	void Update()
 	{
-		float mover = Input.GetAxis("Vertical");  
-		float rotacionar = Input.GetAxis("Horizontal");
+		float verticalMovement = Input.GetAxis("Vertical");  
+		float horizontalMovement = Input.GetAxis("Horizontal");
 
-		transform.Translate(Vector3.forward * mover * velocidade * Time.deltaTime);
-		transform.Rotate(Vector3.up * rotacionar * velocidadeRotacao * Time.deltaTime);
+		transform.Translate(Vector3.forward * verticalMovement * speed * Time.deltaTime);
+		transform.Rotate(Vector3.up * horizontalMovement * rotationSpeed * Time.deltaTime);
 	}
 }

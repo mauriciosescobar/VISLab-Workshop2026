@@ -13,7 +13,6 @@ public class PlayerController : MonoBehaviour
 	void Start()
 	{
 		currentHealth = maxHealth;
-		Debug.Log("Stgart");
 	}
 
 	public void TakeDamage(int amount)
@@ -33,9 +32,10 @@ public class PlayerController : MonoBehaviour
 
 	private void GameOver()
 	{
-		GetComponent<BasicWASDController>().enabled = false;
+		Destroy(GetComponent<BasicWASDController>());
 
 		Rigidbody rb = GetComponent<Rigidbody>();
+		rb.isKinematic = false;
 		rb.useGravity = true;
 		rb.AddExplosionForce(800, transform.position + new Vector3(0.2f, 0, 0.1f), 5, 3);
 	}

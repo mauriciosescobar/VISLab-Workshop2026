@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "br.ufrgs.vislab.workshop": {
+      "version": "https://github.com/mauriciosescobar/VISLab-Workshop2026-Embedded-Package.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "f37333a1510f99e611a3d55300c54c002a55da3a"
+    },
     "com.unity.ai.navigation": {
       "version": "2.0.12",
       "depth": 0,
